@@ -9,11 +9,12 @@
             margin: 0px;
         }
         div{
-            height: 99vh;
+            height: 100vh;
             width: 100%;
+          
             
         }
-        .box1{
+        /* /* .box1{
             background: linear-gradient( to top, red,blue,purple);
         }
         .box2{
@@ -27,18 +28,58 @@
         }
         .box5{
             background: linear-gradient(to bottom, red,blue,purple);
+        } */
+        .boxangle{
+            background: linear-gradient(360deg, red 12px,blue 210px,purple );
+            border: soild;   
+            color: white;
+            font-size: 4rem;
+        } 
+        .rg{
+            background: radial-gradient(yellow,red,blue);
         }
+        .rg1{
+            background: radial-gradient(circle, yellow 5px,red,blue);
+        }
+        .rg2{
+            background: radial-gradient(closest-side at 50% 50%, yellow,red,blue);
+        }
+        .rg3{
+            background: radial-gradient(farthest-side at 60% 40%, yellow 5px,red,blue);
+        }
+        .rg4{
+            background: radial-gradient(closest-corner at 50% 40%, yellow ,red,blue);
+        }
+        .rg5{
+            background: radial-gradient(farthest-corner, yellow ,red,blue);
+        }
+      
     </style>
 </head>
 <body>
     <!-- Linear gradient -->
-    <div class="box1"></div>
+    <!-- <div class="box1"></div>
     <div class="box2"></div>
     <div class="box3"></div>
     <div class="box4"></div>
-    <div class="box5"></div>
+    <div class="box5"></div> -->
 
     <!-- DIRECTION -->
-    <h1>to top,to right,to left, to right top,to left bottom</h1>
+    <!-- <h1>to top,to right,to left, to right top,to left bottom</h1> -->
+
+    <!-- changing angle -->
+    <div class="boxangle"> Gradient with angle</div>
+
+    <!-- circle gradient -->
+     <div class="rg"></div>
+    <div class="rg1"></div>  
+
+    <!-- side -->
+    <div class="rg2"></div>
+    <div class="rg3"></div>
+    <div class="rg4"></div>
+    <div class="rg5"></div>
+
+    
 </body>
-</html>o
+</html>
