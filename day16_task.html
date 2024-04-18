@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>national flag</title>
+    <style>
+        /* div{
+            border: 2px black solid;
+        } */
+        /* div{
+            margin-left: 200px;
+        } */
+        .one{
+            background-color: orange;
+            height: 100px;
+            width: 400px;
+            
+        }
+        .two{
+            background-color: white;
+            height: 120px;
+            width: 400px;
+
+        }
+        img{
+            height: 80px;
+            padding-top: 20px;
+            margin-left: 125px;
+            transition: 100s linear;
+            position:absolute;
+            display: block;
+            -webkit-transform: -webkit-transform 1s;
+            
+        }
+        
+        img:hover{
+            -webkit-animation: spin 1s linear infinite;
+            -moz-animation: spin 1s linear infinite;
+            animation: spin 1s linear infinite;
+        }
+        @-webkit-keyframes spin{
+            100%{-webkit-transform: rotate(360deg);
+            }
+        }
+        @-moz-keyframes spin{
+            100%{-webkit-transform:rotate(360deg);}
+        }
+        @keyframes spin{
+            100%{-webkit-transform: rotate(360deg);}
+        }
+        
+        .three{
+            background-color: green;
+            height: 100px;
+            width: 400px;
+        }
+    
+    
+    </style>
+</head>
+<body>
+    <div class="one"></div>
+    <div class="two"><div><img src="chakra.jpg" alt=""></div></div>
+    <div class="three"></div>
+</body>
+</html>
