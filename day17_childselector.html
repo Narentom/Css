@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>child selector</title>
+    <style>
+        /* .parent>h1{
+            font-size: 3rem;
+            color: aqua;
+            -webkit-text-stroke: 2px black;
+
+        }
+        .inner>h1{
+            color: blueviolet;
+            font: 3rem;
+        } */
+
+        /* adjucent sibling selector */
+        /* h1+h2{
+            font-size: 4rem;
+            color: chocolate;
+            -webkit-text-stroke:2px black ;
+        }
+        h3+h4{
+            font-size: 4rem;
+            color: chocolate;
+            text-transform: uppercase;
+            -webkit-text-stroke:2px black ;
+        } */
+        /* h1~h2{
+            color: blueviolet;
+            font-size:4rem
+        }
+        h4~h2{
+            color:cadetblue;
+        } */
+        .wrapper h1~h2{
+            color: blueviolet;
+            font-size: 3rem;
+            text-transform: lowercase;
+        }
+        .wrapper1 h1~h3{
+            color:crimson;
+            font-size: 4rem;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <!-- child selector -->
+    <!-- <div class="parent">
+        /* <h1>This is a direct h1</h1>
+        <h2>This is a direct h2</h2>
+        <h3>This is a direct h3</h3>
+        <div class="inner">
+            <h1>This is inner h1</h1>
+            <h2>This is inner h1</h2>
+            <h3>This is inner h1</h3>
+        </div>
+        <h1>This ia direct h1</h1>
+        <h2>This is a direct h2</h2> */
+    </div> -->
+
+    <!-- adjucent sibling selector -->
+    <!-- <h1>This is a first child </h1>
+    <h2>This is a second child </h2>
+    <h3>This is a three child </h3>
+    <h4>This is a four child </h4>
+    <h5>This is a five child </h5>
+    <p> This is a sixth child</p>
+    <div>This is seventh child</div>
+    <h2>This is a eighth</h2>  -->
+
+    <!-- general selector -->
+     <!-- <h1>This is a first child </h1>
+    <h2>This is a second child </h2>
+    <h3>This is a three child </h3>
+    <h4>This is a four child </h4>
+    <h5>This is a five child </h5>
+    <p> This is a sixth child</p>
+    <div>This is seventh child</div>
+    <h2>This is a eighth</h2> 
+    <h3>This is a nine</h3> -->
+
+    <!-- task -->
+    <div class="wrapper">
+        <h1>This is a first child </h1>
+        <h2>This is a second child </h2>
+        <h3>This is a three child </h3>
+        <h4>This is a four child </h4>
+        <h5>This is a five child </h5>
+        <p> This is a sixth child</p>
+        <div>This is seventh child</div>
+        <h1>This ia ten child</h1>
+        <h2>This is a eighth</h2> 
+        <h3>This is a nine</h3>
+    </div>
+    <div class="wrapper1">
+        <h1>This is a first child </h1>
+        <h2>This is a second child </h2>
+        <h3>This is a three child </h3>
+        <h4>This is a four child </h4>
+        <h5>This is a five child </h5>
+        <p> This is a sixth child</p>
+        <div>This is seventh child</div>
+        <h1>This ia ten child</h1>
+        <h2>This is a eighth</h2> 
+        <h3>This is a nine</h3>
+    </div>
+</body>
+</html>
