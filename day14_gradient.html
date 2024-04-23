@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>gradient</title>
     <style>
-        *{
+        /* *{
             margin: 0px;
-        }
+        } */
         div{
-            height: 100vh;
-            width: 100%;
+            height: 550px;
+            width: 550px;
           
             
         }
@@ -29,7 +29,7 @@
         .box5{
             background: linear-gradient(to bottom, red,blue,purple);
         } */
-        .boxangle{
+        /* .boxangle{
             background: linear-gradient(360deg, red 12px,blue 210px,purple );
             border: soild;   
             color: white;
@@ -52,6 +52,11 @@
         }
         .rg5{
             background: radial-gradient(farthest-corner, yellow ,red,blue);
+        } */
+        .cg1{
+            background: conic-gradient(red 50deg,blue 50deg 90deg,purple 90deg 120deg,green 120deg 150deg,black 150deg 200deg,yellow 200deg 270deg,cyan 270deg   );
+            border-radius: 50%;
+            animation: rotate 6s linear infinite;
         }
       
     </style>
@@ -68,17 +73,20 @@
     <!-- <h1>to top,to right,to left, to right top,to left bottom</h1> -->
 
     <!-- changing angle -->
-    <div class="boxangle"> Gradient with angle</div>
+    <!-- <div class="boxangle"> Gradient with angle</div> -->
 
-    <!-- circle gradient -->
-     <div class="rg"></div>
-    <div class="rg1"></div>  
+    <!-- radial gradient -->
+     <!-- <div class="rg"></div>
+    <div class="rg1"></div>   -->
 
     <!-- side -->
-    <div class="rg2"></div>
+    <!-- <div class="rg2"></div>
     <div class="rg3"></div>
     <div class="rg4"></div>
-    <div class="rg5"></div>
+    <div class="rg5"></div> -->
+
+    <!-- conical gradient -->
+    <div class="cg1"></div>
 
     
 </body>
