@@ -41,6 +41,7 @@
      /* brefore */
      h1::before{
         content: "👽";
+        transition: all .9s linear;
      }
 
      /* after */
@@ -51,13 +52,37 @@
         background-clip: text;
         color: transparent;
      }
-
-
+     
+     /* selection */
+     p::selection{
+        color: greenyellow;
+     }
+     
+     ::placeholder{
+        color: darkblue;
+        opacity: .5;
+     }
+     ul{
+        color: antiquewhite;
+     }
+     ::marker{
+        content: "😎";
+     }
     </style>
 </head>
 <body>
     <h1>pysp <span class="spn">i</span> der</h1>
 
   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel numquam ipsum reiciendis alias nisi, molestiae mollitia recusandae eveniet quam perferendis rem nostrum modi sint? Necessitatibus provident, voluptatibus suscipit, exercitationem distinctio in laboriosam id porro dolore iste quod quos, iure quam veniam illo quasi incidunt. Voluptatum numquam iste quia in ducimus animi praesentium blanditiis recusandae enim ipsam, libero facilis quidem consequuntur a nulla at ratione assumenda suscipit molestias. Iste commodi quas harum voluptas molestiae voluptate soluta, voluptatem molestias eveniet? Doloribus tempore qui quos aut omnis sunt sequi sapiente temporibus fugit molestiae esse, tenetur quas sint provident nam consequatur porro ab modi!</p>
+<input type="text" placeholder="Enter anything">
+<input type="password" placeholder="Enter your password">
+
+<ul>
+    <li>Css</li>
+    <li>Html</li>
+    <li>Javascript</li>
+    <li>Python</li>
+    <li>Sql</li>
+</ul>
 </body>
 </html>
