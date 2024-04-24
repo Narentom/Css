@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo</title>
+    <style>
+        
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Noto+Serif+JP&display=swap');
+    
+    body{
+            background-color: black;
+        }
+        h1{
+            color: aliceblue;
+            font-size: 10rem;
+            font-family: "Dancing Script", cursive;
+            text-align: center;
+             margin-top: 15%;
+        }
+
+        /* firstletter */
+        h1::first-letter{
+            color: crimson;
+        
+        }
+        .spn{
+            color: crimson;
+        }
+        p{
+            color: aliceblue;
+        }
+
+        /* firstline */
+     p::first-line{
+        color: crimson;
+        background-color: aqua;
+     }
+
+     /* brefore */
+     h1::before{
+        content: "👽";
+     }
+
+     /* after */
+     h1::after{
+        content:"   bangalore" ;
+        color: crimson;
+        background: linear-gradient(135deg,lightblue,crimson,purple,black,red,yellow,green,orange,blue,springgreen);
+        background-clip: text;
+        color: transparent;
+     }
+
+
+    </style>
+</head>
+<body>
+    <h1>pysp <span class="spn">i</span> der</h1>
+
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel numquam ipsum reiciendis alias nisi, molestiae mollitia recusandae eveniet quam perferendis rem nostrum modi sint? Necessitatibus provident, voluptatibus suscipit, exercitationem distinctio in laboriosam id porro dolore iste quod quos, iure quam veniam illo quasi incidunt. Voluptatum numquam iste quia in ducimus animi praesentium blanditiis recusandae enim ipsam, libero facilis quidem consequuntur a nulla at ratione assumenda suscipit molestias. Iste commodi quas harum voluptas molestiae voluptate soluta, voluptatem molestias eveniet? Doloribus tempore qui quos aut omnis sunt sequi sapiente temporibus fugit molestiae esse, tenetur quas sint provident nam consequatur porro ab modi!</p>
+</body>
+</html>
