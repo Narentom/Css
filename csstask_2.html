@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>heart beat</title>
+    <style>
+        .main{
+            height: 500px;
+            width: 500px;
+            border: 2px black solid;
+            display: flex;
+            justify-content: center;
+            
+         }
+       
+        .box-1, .box-2{
+            height: 200px;
+            width: 100px;
+            display: inline-block;
+            background-color: red;
+            
+            
+        
+        }
+        .box-1{
+            border-top-left-radius: 50%;
+            border-top-right-radius: 50%;
+            transform: rotate(-53deg);
+        }
+        .box-2{
+            border-top-right-radius: 50%;
+            border-top-left-radius: 50%;
+            transform: rotate(53deg);
+            
+        }
+    @keyframes box{
+
+        0%{
+            opacity: 1;
+        }
+        15%{
+            opacity: 0;
+        }
+        25%{
+            opacity: 0;
+        }
+        45%{
+            opacity: 0;
+        }
+        75%{
+            opacity: 0;
+        }
+    }
+
+    </style>
+</head>
+<body>
+
+   <div class="main">
+    <div class="box-1"></div>
+    <div class="box-2"></div>
+   </div>
+   
+</body>
+</html>
