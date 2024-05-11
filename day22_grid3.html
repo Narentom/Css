@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+        }
+        .main-grid{
+            height: 99vh;
+            width: 100%;
+            background-color: aquamarine;
+            display: grid;
+            grid-template-columns:300px auto auto ;
+            grid-template-rows:70px auto 140px ;
+            grid-template-areas: "Naren Naren Naren" 
+                                     "Loki Raj Raj"
+                                     "Mageh Mageh Mageh";
+        }
+        .main-grid .item{
+            height: 100%;
+            width: 100%;
+            border: 1px black solid;
+            display: grid;
+            place-content: center;
+
+        }
+        .main-grid .item-1{
+            background-color: blueviolet;
+            grid-area: Naren;
+        }
+        .main-grid .item-2{
+            background-color:lightsalmon;
+            grid-area: Loki;
+        }
+        .main-grid .item-3{
+            background-color:lime;
+            grid-area: Raj;
+        }
+        .main-grid .item-4{
+            background-color:steelblue;
+            grid-area: Mageh;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-grid">
+        <div class=" item item-1">naren</div>
+        <div class="item  item-2">Loki</div>
+        <div class=" item item-3">Raj</div>
+        <div class=" item  item-4 ">Mageh</div>
+    </div>
+</body>
+</html>

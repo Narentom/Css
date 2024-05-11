@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 100px;
+            width: 100px;
+            background-color: darkcyan;
+            border:1px black solid;
+            border-radius: 20px;
+            position: absolute;
+            /* animation-name: grow-box;
+            animation-duration:1s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+            animation-direction: reverse ;
+            animation-direction: alternate;
+            animation-direction: alternate-reverse; */
+
+            animation:box 3s linear infinite normal;
+        }
+        /* @keyframes box{
+            from{
+                initial css props
+                width: 0px;
+            }
+            to{
+                final css props
+                width: 500px;
+                background-color: chartreuse;
+                transform: translate(500px) rotate(360deg);
+                 border-radius: 50%;
+            }
+            0%{
+                top: 0;
+                left: 0;
+            }
+            25%{
+                top: 0;
+                left: 1300px;
+                transform: rotateX(360deg);
+                }
+            50%{
+                top: 550px;
+                left: 1300px;
+            }
+            75%{
+                top: 550px;
+                left: 0;
+            }
+            100%{
+                top: 0;
+                left: 0;
+            }
+
+            }
+         */
+         @keyframes box{
+            0%{
+                left: 0;
+                top: 500px;
+            }
+          
+            25%{
+                left:300px;
+                top: 0;
+            }
+             
+            50%{
+                
+                top: 250px;
+                left:600px;
+            }
+             
+            75%{
+             
+                top: 0;
+                left:900px;
+
+            }
+             
+            100%{
+              
+                top: 500px;
+                left: 1200px;
+            }
+
+         }
+
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
