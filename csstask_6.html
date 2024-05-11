@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .battery{
+            height: 200px;
+            width: 600px;
+            border: black 10px solid;
+            border-radius: 30px;
+            position: absolute;
+            left: 400px;
+            top: 250px;
+        }
+
+        .notch{
+
+            height: 100px;
+            width: 20px;
+            background-color: black;
+            border-radius: 0 10px 10px 0;
+            position: absolute;
+            left: 610px;
+            top: 55px;
+        }
+
+        .battery:before {
+            content: "";
+            position: absolute;
+            top: 6px;
+            left: 6px;
+            height: 190px;
+            background-color: cyan;
+            border-radius: 20px;
+            animation: full 10s linear infinite;
+        }
+
+       
+
+        @keyframes full {
+            0% {
+                width: 0%;
+                background-color: red;
+            }
+            25% {
+                width: 24%;
+                background-color: orangered;
+            }
+            50% {
+                width: 48%;
+                background-color: orange;
+            }
+            75% {
+                width: 72%;
+                background-color: yellowgreen;
+            }
+            100% {
+                width: 96%;
+                background-color: green;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="battery">
+        <div class="notch"></div>
+    </div>
+</body>
+</html>
+ 
